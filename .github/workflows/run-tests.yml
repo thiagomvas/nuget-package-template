@@ -17,6 +17,6 @@ jobs:
       with:
         dotnet-version: 8.0.x 
     - name: Restore dependencies
-      run: dotnet restore Meminisse.Tests
+      run: dotnet restore Meminisse.Tests/Meminisse.Tests.csproj
     - name: Build Test Project
-      run: dotnet build --no-restore Meminisse.Tests
+      run: dotnet build --no-restore Meminisse.Tests/Meminisse.Tests.csproj
